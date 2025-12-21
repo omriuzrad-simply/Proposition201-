@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
+const APP_VERSION = '1.0.0';
+
 type Animal = {
   name: string;
   adultImage: string;
@@ -230,6 +232,11 @@ export default function Home() {
               </div>
             );
           })}
+        </div>
+
+        {/* Version Number */}
+        <div className="mt-16 text-center">
+          <span className="text-sm text-gray-400">v{APP_VERSION}</span>
         </div>
       </div>
     </div>
